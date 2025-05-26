@@ -1,14 +1,12 @@
 {
   "name": "type_safety",
   "version": "1.0.0",
-  "description": "",
+  "description": "Test task (BKH Ecom)",
   "main": "index.js",
   "scripts": {
     "test": "jest"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
+  "author": "Maxim Borodin",
   "type": "commonjs",
   "devDependencies": {
     "@types/jest": "^29.5.14",
