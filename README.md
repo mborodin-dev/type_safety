@@ -16,7 +16,19 @@ Install dependencies and run tests.
   npm test
 ```
 
-## Future plans
+## Functional
 
-- Write tests for `createPalette()` function.
-- Add a description of the main functionality.
+- `createTone()` - a constructor that returns a "Tone" object. Used to define color processing logic.
+
+```javascript
+Tone {
+  name: string // tone name
+  handler: ToneFn // main function
+  subtone?: Record<string, SubtoneFn> // optional undertones
+}
+```
+
+- `createPalette(input, base?, tones)` - applies "tones" to each color. Generates an output object where the keys are combinations of conditions.
+  - `input` - input color set
+  - `base` - optional function for complementing colors
+  - `tones` - objects from createTone()
